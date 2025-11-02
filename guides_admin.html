@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Гиды</title>
+  <link rel="stylesheet" href="/guides_admin.css">
+</head>
+<body>
+  <h1>
+    Гиды
+    <button id="logoutBtn" style="float:right">Выйти</button>
+  </h1>
+
+  <button class="add" id="btnAdd">Добавить гида</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>ФИО</th>
+        <th>Опыт</th>
+        <th>Языки</th>
+        <th>Рейтинг</th>
+        <th>Активен</th>
+        <th>Действия</th>
+      </tr>
+    </thead>
+    <tbody id="tb">
+      <tr><td colspan="7">Загрузка...</td></tr>
+    </tbody>
+  </table>
+
+  <div id="form" style="display:none; margin-top:10px;"></div>
+
+  <script src="../js/guides_admin.js" defer></script>
+</body>
+</html>

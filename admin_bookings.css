@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: 12px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #e3f2fd;
+}
+
+button {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.ok {
+  background: #28a745;
+  color: #fff;
+  border-color: #28a745;
+}
+
+.rej {
+  background: #ffc107;
+  color: #333;
+  border-color: #ffc107;
+}
+
+.del {
+  background: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}

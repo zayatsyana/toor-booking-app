@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Tour Booking Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card" id="main-card">
+    <div id="welcome-screen">
+      <h1>TourMate</h1>
+      <p>Бронируйте экскурсии легко и удобно! Следите за расписанием туров, бронируйте места и управляйте своими заказами.</p>
+      <div class="buttons">
+        <button id="btn-login">Авторизация</button>
+        <button id="btn-register">Регистрация</button>
+      </div>
+    </div>
+
+    <div id="auth-screen" style="display:none;">
+      <h2 id="form-title">Авторизация</h2>
+
+      <div id="login-form">
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input type="password" id="login-password" placeholder="Пароль" required />
+        <button onclick="login()">Войти</button>
+      </div>
+
+      <div id="register-form" style="display:none;">
+        <input type="text" id="reg-first" placeholder="Имя" required />
+        <input type="text" id="reg-last" placeholder="Фамилия" required />
+        <input type="email" id="reg-email" placeholder="Email" required />
+        <input type="password" id="reg-pass" placeholder="Пароль" required />
+        <input type="text" id="reg-phone" placeholder="Телефон (необязательно)" />
+        <button onclick="register()">Зарегистрироваться</button>
+      </div>
+
+      <div class="toggle" onclick="toggleForms()">Нет аккаунта? Зарегистрироваться</div>
+    </div>
+  </div>
+
+  <script src="../js/script.js" defer></script>
+</body>
+</html>
